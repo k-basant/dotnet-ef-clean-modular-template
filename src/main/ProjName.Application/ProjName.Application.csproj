@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\ProjName.Domain.Shared\ProjName.Domain.Shared.csproj" />
+    <ProjectReference Include="..\ProjName.Domain\ProjName.Domain.csproj" />
+    <ProjectReference Include="..\..\shared\ProjName.Application.Shared\ProjName.Application.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Ops\" />
+  </ItemGroup>
+
+</Project>
